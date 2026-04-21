@@ -10,7 +10,7 @@ pipeline {
                 git 'https://github.com/Naveen04jan/ven.git'
             }
         }
-        stages {
+        
         stage('Build') {
             steps {
                 sh 'mvn -v'
@@ -18,7 +18,7 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-    }
+    
 
         stage('Build') {
             steps {
